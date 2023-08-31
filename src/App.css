@@ -161,6 +161,10 @@ html {
 }
 
 @media (max-width: 391px) {
+    html {
+        height: 70vh;
+        width: 100vw;
+    }
     .timerContainer {
         display: flex;
         flex-direction: column;
@@ -193,12 +197,22 @@ html {
         text-align: center;
         color: rgba(255, 255, 255, 0.656);
     }
+
     .controls {
         display: flex;
         justify-content: center;
         width: 100vw;
-
+        margin-bottom: 2rem;
         position: fixed;
         bottom: 0;
+    }
+
+    .controls button {
+        border: none;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.853);
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
     }
 }
